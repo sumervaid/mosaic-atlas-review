@@ -1,0 +1,619 @@
+{
+"fork_id": "pilot-negative-lead",
+"status": "complete",
+"recorded": true,
+"description": "Six agents. Lead steered toward negative affect.",
+"model": "gemma-3-4b-it",
+"replicates": 5,
+"steps": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"agents": [
+{
+"id": "Rowan",
+"role": "Lead",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Rowan, a logistics coordinator who manages suppliers and deliveries.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Ellis",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Ellis, an operations analyst who has worked on scheduling for eight years.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Sasha",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sasha, a clinical operations lead who organizes clinic workflows.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Morgan",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Morgan, a program officer who reviews grant and event plans.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Riley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Riley, a program officer who reviews grant and event plans.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Casey",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Casey, a research administrator who supports field and lab teams.\nYou like to check who is responsible for each step."
+}
+],
+"targets": [
+"Rowan"
+],
+"hop": {
+"Rowan": "0",
+"Ellis": "1",
+"Sasha": "1",
+"Morgan": "1",
+"Riley": "1",
+"Casey": "1"
+},
+"concept": {
+"source": "pilot-directions",
+"feature": 0,
+"label": "Negative affect direction"
+},
+"front": {
+"treatment": [
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0
+],
+"noise_floor": null,
+"noise_floor_measured": false
+},
+"divergence": {
+"Casey": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+},
+"Ellis": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+},
+"Morgan": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+},
+"Riley": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+},
+"Rowan": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+},
+"Sasha": {
+"median": 1,
+"iqr": [
+1,
+1
+],
+"diverged_in": 1,
+"replicates": 1
+}
+},
+"hop_effects": [
+{
+"hop": "0",
+"agents": 1,
+"overall": {
+"estimate": 349.6026605871898,
+"ci": [
+344.0817579295316,
+356.10207502328825
+],
+"n": 5
+},
+"by_step": {
+"1": {
+"estimate": 333.17591190504135,
+"ci": [
+321.2704799545036,
+345.08134385557923
+],
+"n": 5
+},
+"2": {
+"estimate": 346.8347242849999,
+"ci": [
+338.6906578963965,
+352.84650981644006
+],
+"n": 5
+},
+"3": {
+"estimate": 355.24115901286575,
+"ci": [
+341.87274617168737,
+371.7979725325127
+],
+"n": 5
+},
+"4": {
+"estimate": 348.4791254259834,
+"ci": [
+334.9325411780005,
+364.8447863106824
+],
+"n": 5
+},
+"5": {
+"estimate": 360.3374811016147,
+"ci": [
+352.21308203344614,
+368.46188016978317
+],
+"n": 5
+},
+"6": {
+"estimate": 361.19825687808265,
+"ci": [
+349.950838546333,
+373.9954844276194
+],
+"n": 5
+},
+"7": {
+"estimate": 349.07520046279603,
+"ci": [
+341.241548293528,
+356.9088526320641
+],
+"n": 5
+},
+"8": {
+"estimate": 347.30183849706174,
+"ci": [
+329.9426332074644,
+362.0274772496471
+],
+"n": 5
+},
+"9": {
+"estimate": 344.66139868489756,
+"ci": [
+337.5236936506769,
+353.2427932793826
+],
+"n": 5
+},
+"10": {
+"estimate": 349.72150961855493,
+"ci": [
+328.72014008040503,
+366.16534558047454
+],
+"n": 5
+}
+}
+},
+{
+"hop": "1",
+"agents": 5,
+"overall": {
+"estimate": 12.392220304307852,
+"ci": [
+8.763716159703439,
+16.7238002113084
+],
+"n": 5
+},
+"by_step": {
+"1": {
+"estimate": 17.164705380126318,
+"ci": [
+9.045743799161103,
+26.725265032794972
+],
+"n": 5
+},
+"2": {
+"estimate": 17.483491585768185,
+"ci": [
+9.982312098607837,
+24.984671072928535
+],
+"n": 5
+},
+"3": {
+"estimate": 8.701562121595359,
+"ci": [
+6.70541064235546,
+10.89267603265225
+],
+"n": 5
+},
+"4": {
+"estimate": 4.386508840076191,
+"ci": [
+-6.2167178547817965,
+13.061893094089603
+],
+"n": 5
+},
+"5": {
+"estimate": 17.59371586978984,
+"ci": [
+7.0677741629306166,
+28.357956443493105
+],
+"n": 5
+},
+"6": {
+"estimate": 10.672685951673216,
+"ci": [
+-1.0173041997372394,
+22.725348678653866
+],
+"n": 5
+},
+"7": {
+"estimate": 4.8513714860018675,
+"ci": [
+-4.219552046881427,
+14.29445564593875
+],
+"n": 5
+},
+"8": {
+"estimate": 12.281048296955955,
+"ci": [
+9.427669741259683,
+15.134426852652231
+],
+"n": 5
+},
+"9": {
+"estimate": 15.7966347608505,
+"ci": [
+8.806905373132434,
+23.200504967181594
+],
+"n": 5
+},
+"10": {
+"estimate": 14.990478750241072,
+"ci": [
+6.343932511475195,
+19.990794675756412
+],
+"n": 5
+}
+}
+}
+],
+"outcomes": [
+{
+"name": "affect",
+"label": "Reported affect of unsteered agents (1 to 7)",
+"control": 5.6928,
+"treatment": 5.1792,
+"difference": {
+"estimate": -0.5135999999999997,
+"ci": [
+-0.6052000000000005,
+-0.4183999999999989
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "negative_affect",
+"label": "Reported negative affect of unsteered agents (1 to 7)",
+"control": 2.4488000000000003,
+"treatment": 3.6607999999999996,
+"difference": {
+"estimate": 1.2119999999999997,
+"ci": [
+1.0607999999999995,
+1.3295999999999997
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "positive_affect",
+"label": "Reported positive affect of unsteered agents (1 to 7)",
+"control": 5.8344000000000005,
+"treatment": 6.0192,
+"difference": {
+"estimate": 0.18479999999999971,
+"ci": [
+0.10479999999999912,
+0.25839999999999963
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "message_tone",
+"label": "Judged message tone of unsteered agents (1 to 7)",
+"control": 3.6680000000000006,
+"treatment": 3.336,
+"difference": {
+"estimate": -0.3320000000000003,
+"ci": [
+-0.38800000000000034,
+-0.26800000000000024
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "decision_accuracy",
+"label": "Decision accuracy of the team",
+"control": 1.0,
+"treatment": 1.0,
+"difference": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 5
+},
+"excludes_zero": false
+},
+{
+"name": "holder_voice",
+"label": "Reveal holder raises the flaw",
+"control": 0.9199999999999999,
+"treatment": 0.96,
+"difference": {
+"estimate": 0.039999999999999994,
+"ci": [
+-0.039999999999999994,
+0.13999999999999996
+],
+"n": 5
+},
+"excludes_zero": false
+},
+{
+"name": "said_represented_gap",
+"label": "Said versus represented gap",
+"control": null,
+"treatment": null,
+"difference": null,
+"excludes_zero": false,
+"not_measured": "Needs natural language autoencoder readouts, which the pilot did not record."
+}
+],
+"map": {
+"control": {
+"1": {
+"Rowan": 12.522520367045031,
+"Ellis": 12.742084496023175,
+"Riley": 7.613608185105754,
+"Sasha": 10.225026479871861,
+"Morgan": 2.1611395554780906,
+"Casey": 0.15097581046851616
+},
+"2": {
+"Rowan": 11.374448950022792,
+"Sasha": 4.904436632110162,
+"Riley": 20.526120066031023,
+"Morgan": 24.503641142303543,
+"Casey": 18.812817701511367,
+"Ellis": 30.610087785317972
+},
+"3": {
+"Rowan": -0.5377549448765606,
+"Riley": 8.853652882114545,
+"Casey": -14.118464898666108,
+"Sasha": 55.45743017094439,
+"Ellis": 44.92249741930103,
+"Morgan": 51.40374704787022
+},
+"4": {
+"Rowan": 7.002215280435319,
+"Ellis": 20.376335203147754,
+"Casey": -4.808222847064503,
+"Morgan": 19.89769006311089,
+"Riley": 9.086641752770172,
+"Sasha": 29.67137330697903
+},
+"5": {
+"Rowan": 0.19250139376641684,
+"Casey": -3.473414211043785,
+"Morgan": 11.006560094986337,
+"Riley": 10.07076395721184,
+"Ellis": 6.465855870972874,
+"Sasha": 21.210930392994424
+},
+"6": {
+"Rowan": -2.174177278745006,
+"Casey": -14.584661362685694,
+"Ellis": -18.064703674788532,
+"Morgan": 7.853174400112003,
+"Riley": 21.287833722283494,
+"Sasha": 35.60759174703287
+},
+"7": {
+"Rowan": 17.244559112591027,
+"Ellis": 31.76626027214833,
+"Sasha": 37.93116649379582,
+"Casey": 17.724306060473197,
+"Morgan": 14.661883580494493,
+"Riley": 13.596978160768757
+},
+"8": {
+"Rowan": 14.63418232000655,
+"Casey": 20.338476477104237,
+"Ellis": 34.32464131118583,
+"Sasha": 34.311826164979564,
+"Morgan": 35.41975581325363,
+"Riley": 26.498672327245995
+},
+"9": {
+"Rowan": 5.024004461303445,
+"Riley": 19.03663866408728,
+"Sasha": 18.194431980831823,
+"Casey": 9.008427191447868,
+"Ellis": 17.177066196462484,
+"Morgan": 22.406809315043454
+},
+"10": {
+"Rowan": 13.814261270393484,
+"Casey": 7.655510042893631,
+"Morgan": 8.172408768555997,
+"Riley": -4.819261560887643,
+"Ellis": -0.36591201653577343,
+"Sasha": 12.230213534354654
+}
+},
+"treatment": {
+"1": {
+"Rowan": 348.89005754267464,
+"Ellis": 60.827926423328414,
+"Riley": 24.65044351436391,
+"Sasha": 44.279212447430794,
+"Morgan": 41.8188315977179,
+"Casey": 34.510934854751085
+},
+"2": {
+"Rowan": 366.07762085418915,
+"Sasha": 47.32887696827246,
+"Riley": 12.716103659481092,
+"Morgan": 32.35812257776504,
+"Casey": 33.40716155980925,
+"Ellis": 40.701124840048024
+},
+"3": {
+"Rowan": 384.5983170817102,
+"Riley": 20.011362622963073,
+"Casey": 35.20041743607028,
+"Sasha": 52.07383303978958,
+"Ellis": 42.55481567767981,
+"Morgan": 30.032202067791438
+},
+"4": {
+"Rowan": 387.02417895713086,
+"Ellis": 62.755478299367006,
+"Casey": 32.108852514922376,
+"Morgan": 44.80126679432821,
+"Riley": 12.83806760488736,
+"Sasha": 14.779258409005097
+},
+"5": {
+"Rowan": 373.8490783959512,
+"Casey": 51.048430297488125,
+"Morgan": 31.62187669574714,
+"Riley": 39.03329729218038,
+"Ellis": 44.04011009242866,
+"Sasha": 56.46313773843352
+},
+"6": {
+"Rowan": 381.20887620972667,
+"Casey": 35.393763349651216,
+"Ellis": 32.37321660681601,
+"Morgan": 32.89325750837946,
+"Riley": 28.59131173306931,
+"Sasha": 56.93142953596778
+},
+"7": {
+"Rowan": 372.8303778375333,
+"Ellis": 62.11813477010949,
+"Sasha": 57.00705537468592,
+"Casey": 29.74957248198632,
+"Morgan": 40.21932920063405,
+"Riley": 24.602333787321342
+},
+"8": {
+"Rowan": 371.8093079708739,
+"Casey": 45.014280140055924,
+"Ellis": 37.77053266126373,
+"Sasha": 45.163320149961706,
+"Morgan": 32.00947499936265,
+"Riley": 32.09744834277784
+},
+"9": {
+"Rowan": 351.1508528328313,
+"Riley": 39.797995480101086,
+"Sasha": 38.247597446486964,
+"Casey": 41.02279594154009,
+"Ellis": 31.451209450815014,
+"Morgan": 25.048463047238858
+},
+"10": {
+"Rowan": 356.09484053740744,
+"Casey": 28.139370423083115,
+"Morgan": 30.119886681276164,
+"Riley": 20.507392538204382,
+"Ellis": 23.248493570491664,
+"Sasha": 25.470551528741126
+}
+}
+},
+"log_verification": {
+"branches_checked": 10,
+"all_ok": true,
+"kind": "hash chain"
+},
+"map_seed": 1,
+"hop_levels": [
+"0",
+"1"
+]
+}

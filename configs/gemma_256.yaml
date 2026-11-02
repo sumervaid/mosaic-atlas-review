@@ -1,0 +1,21 @@
+id: gemma-256
+description: The 256-agent demonstration on Gemma 3 12B with Gemma Scope 2. Needs one GPU with 24 GB and Hugging Face access to the model.
+model:
+  backend: hf
+  model_id: gemma-3-12b-it
+  hf_repo: google/gemma-3-12b-it
+  sae_repo: google/gemma-scope-2-12b-it
+  sae_path: resid_post_all/layer_32_width_16k_l0_small
+  dtype: bfloat16
+  device: cuda
+population: {coordinator: 1, teams: 15, provers_per_team: 10, verifiers_per_team: 6}
+topology: hierarchy
+steps: 20
+seed: 0
+temperature: 0.8
+max_new_tokens: 48
+memory_messages: 3
+inbox_chars: 400
+layer: 32
+watch_features: []
+batch_size: 16

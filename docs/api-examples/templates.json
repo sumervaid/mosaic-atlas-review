@@ -1,0 +1,34 @@
+[
+{
+"name": "gemma4b_small",
+"id": "gemma4b-small",
+"description": "A six-team demonstration on Gemma 3 4B with Gemma Scope 2 at layer 14. Needs one GPU with 24 GB and Hugging Face access to the model.",
+"backend": "hf",
+"agents": 16,
+"steps": 10
+},
+{
+"name": "gemma_256",
+"id": "gemma-256",
+"description": "The 256-agent demonstration on Gemma 3 12B with Gemma Scope 2. Needs one GPU with 24 GB and Hugging Face access to the model.",
+"backend": "hf",
+"agents": 256,
+"steps": 20
+},
+{
+"name": "test_256",
+"id": "test-256",
+"description": "The 256-agent demonstration population on the CPU test model. Random weights, so the text has no meaning.",
+"backend": "test",
+"agents": 256,
+"steps": 8
+},
+{
+"name": "test_32",
+"id": "test-32",
+"description": "Software check on the CPU test model. Random weights, so the text has no meaning.",
+"backend": "test",
+"agents": 32,
+"steps": 12
+}
+]

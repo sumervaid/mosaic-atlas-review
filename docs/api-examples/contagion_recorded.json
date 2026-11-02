@@ -1,0 +1,76 @@
+{
+"recorded": true,
+"agents": [
+{
+"id": "Rowan",
+"role": "Lead",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Rowan, a logistics coordinator who manages suppliers and deliveries.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Ellis",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Ellis, an operations analyst who has worked on scheduling for eight years.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Sasha",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sasha, a clinical operations lead who organizes clinic workflows.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Morgan",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Morgan, a program officer who reviews grant and event plans.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Riley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Riley, a program officer who reviews grant and event plans.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Casey",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Casey, a research administrator who supports field and lab teams.\nYou like to check who is responsible for each step."
+}
+],
+"nodes": [
+{
+"id": "m0001-Rowan",
+"agent": "Rowan",
+"step": 1,
+"text": "Right, let's get this sorted. This plan is a disaster waiting to happen. Three weeks of fieldwork, a rushed permit application, and freight delays? Seriously? Ellis, Sasha, Morgan, Riley, Casey \u2013 I need you all to dissect this and tell me *exactly* why this is being proposed. We need to pull this team out of the water before they even get to the island. Let\u2019s start with the logistics \u2013 the freight and ferry are the immediate red flags. I\u2019m not approving this as it stands."
+},
+{
+"id": "m0001-Ellis",
+"agent": "Ellis",
+"step": 1,
+"text": "Okay, Rowan\u2019s right to be concerned. Let\u2019s focus on the stated goals \u2013 successful seabird counts and a timely progress report. The freight delay (24th April arrival) significantly impacts equipment readiness for fieldwork starting May 5th. The rushed permit application is also a major risk. We need to quantify the potential data loss and impact on the report due to this delay. Can we get a revised timeline and confirm equipment availability ASAP?"
+},
+{
+"id": "m0001-Riley",
+"agent": "Riley",
+"step": 1,
+"text": "Okay, here\u2019s my message to the team:\n\n\u201cLet\u2019s nail down the critical dates. The equipment arriving on April 29th means the team won\u2019t have it until May 2nd \u2013 a week before fieldwork starts! Tomasz\u2019s permit application deadline is April 21st, which is also too tight. Can we get a revised timeline showing when equipment will *actually* be ready and a firm date for the permit submission? Let\u2019s prioritize these two points.\u201d"
+},
+{
+"id": "m0001-Sasha",
+"agent": "Sasha",
+"step": 1,
+"text": "Okay, here\u2019s my message to the team:\n\n\u201cRowan\u2019s right \u2013 the timeline is incredibly tight. Riley\u2019s highlighting the key issues: equipment arrives a week before fieldwork and the permit application is rushed. Given the Trust\u2019s 30-day permit processing time, Tomasz needs to submit *today* to realistically meet the May 5th start date. Let\u2019s push for immediate clarification on both equipment readiness and the permit application status \u2013 it\u2019s critical to avoid significant data loss.\u201d"
+}
+],
+"edges": [],
+"seed": 1,
+"empty": "Edge weights come only from message-ablation replays, which need a loaded model. These recorded runs show the messages and no causal weights."
+}

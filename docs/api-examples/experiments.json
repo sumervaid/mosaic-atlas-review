@@ -1,0 +1,103 @@
+{
+"recorded": [
+{
+"id": "pilot-negative-lead",
+"recorded": true,
+"description": "Six agents. Lead steered toward negative affect.",
+"model": "gemma-3-4b-it",
+"fork_id": "pilot-negative-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "pilot-negative-peer",
+"recorded": true,
+"description": "Six agents. Reveal holder steered toward negative affect.",
+"model": "gemma-3-4b-it",
+"fork_id": "pilot-negative-peer",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "pilot-positive-lead",
+"recorded": true,
+"description": "Six agents. Lead steered toward positive affect.",
+"model": "gemma-3-4b-it",
+"fork_id": "pilot-positive-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "pilot-random-lead",
+"recorded": true,
+"description": "Six agents. Lead steered in a random direction of equal norm.",
+"model": "gemma-3-4b-it",
+"fork_id": "pilot-random-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "pilot-prompted-lead",
+"recorded": true,
+"description": "Six agents. Lead instructed to be gloomy, no steering.",
+"model": "gemma-3-4b-it",
+"fork_id": "pilot-prompted-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "scale-50-negative-lead",
+"recorded": true,
+"description": "Fifty agents. Lead steered toward negative affect.",
+"model": "gemma-3-4b-it",
+"fork_id": "scale-50-negative-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+},
+{
+"id": "scale-50-random-lead",
+"recorded": true,
+"description": "Fifty agents. Lead steered in a random direction of equal norm.",
+"model": "gemma-3-4b-it",
+"fork_id": "scale-50-random-lead",
+"seeds": [
+1,
+2,
+3,
+4,
+5
+]
+}
+],
+"live": []
+}

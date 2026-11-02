@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.egg-info/
+runs/
+.env
+*.key.json
+keys/
+.DS_Store
+web/node_modules/
+web/.next/
+web/out/
+.pytest_cache/
+web/tsconfig.tsbuildinfo
+web/test-results/

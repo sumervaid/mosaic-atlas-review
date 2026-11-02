@@ -1,0 +1,30 @@
+name: CI
+on:
+  push: {branches: [main]}
+  pull_request:
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv --python 3.11 .venv
+      - run: uv pip install --python .venv/bin/python torch --index-url https://download.pytorch.org/whl/cpu
+      - run: uv pip install --python .venv/bin/python -e ".[test]"
+      - run: .venv/bin/ruff check mosaic tests scripts
+      - run: .venv/bin/python -m pytest -q
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: {version: 9}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Install, test, and build the web interface
+        run: |
+          if [ ! -f web/package.json ]; then echo "No web interface yet."; exit 0; fi
+          cd web
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm build

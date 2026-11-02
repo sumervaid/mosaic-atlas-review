@@ -1,0 +1,21 @@
+id: gemma4b-small
+description: A six-team demonstration on Gemma 3 4B with Gemma Scope 2 at layer 14. Needs one GPU with 24 GB and Hugging Face access to the model.
+model:
+  backend: hf
+  model_id: gemma-3-4b-it
+  hf_repo: google/gemma-3-4b-it
+  sae_repo: google/gemma-scope-2-4b-it
+  sae_path: resid_post_all/layer_14_width_16k_l0_small
+  dtype: bfloat16
+  device: cuda
+population: {coordinator: 1, teams: 3, provers_per_team: 3, verifiers_per_team: 1}
+topology: hierarchy
+steps: 10
+seed: 0
+temperature: 0.8
+max_new_tokens: 64
+memory_messages: 3
+inbox_chars: 600
+layer: 14
+watch_features: []
+batch_size: 8

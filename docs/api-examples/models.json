@@ -1,0 +1,75 @@
+[
+{
+"id": "test-tiny-gemma3",
+"kind": "test",
+"available": true,
+"live": true,
+"note": "Random weights on the CPU. Verifies the software. Its text and its findings have no meaning.",
+"sources": [
+{
+"id": "sae-random-256",
+"kind": "sae",
+"layer": 2,
+"n_features": 256,
+"note": "Random dictionary"
+},
+{
+"id": "vector",
+"kind": "vector",
+"layer": 2,
+"n_features": 1
+}
+]
+},
+{
+"id": "gemma-3-4b-it",
+"kind": "recorded",
+"available": true,
+"live": false,
+"note": "Recorded pilot runs on Gemma 3 4B. Read only, with no model loaded.",
+"sources": [
+{
+"id": "pilot-directions",
+"kind": "direction",
+"layer": 14,
+"n_features": 1
+}
+]
+},
+{
+"id": "gemma-3-4b-it-live",
+"name": "gemma-3-4b-it",
+"kind": "huggingface",
+"available": false,
+"live": true,
+"repo": "google/gemma-3-4b-it",
+"profile": "4b",
+"note": "Needs a GPU and Hugging Face access. Set up from the Setup screen.",
+"sources": [
+{
+"id": "gemma-scope-2/resid_post_all/layer_14_width_16k_l0_small",
+"kind": "sae",
+"layer": 14,
+"n_features": 16384
+}
+]
+},
+{
+"id": "gemma-3-12b-it-live",
+"name": "gemma-3-12b-it",
+"kind": "huggingface",
+"available": false,
+"live": true,
+"repo": "google/gemma-3-12b-it",
+"profile": "12b",
+"note": "Needs a GPU and Hugging Face access. Set up from the Setup screen.",
+"sources": [
+{
+"id": "gemma-scope-2/resid_post_all/layer_32_width_16k_l0_small",
+"kind": "sae",
+"layer": 32,
+"n_features": 16384
+}
+]
+}
+]

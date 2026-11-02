@@ -1,0 +1,749 @@
+{
+"fork_id": "scale-50-negative-lead",
+"status": "complete",
+"recorded": true,
+"description": "Fifty agents. Lead steered toward negative affect.",
+"model": "gemma-3-4b-it",
+"replicates": 5,
+"steps": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"agents": [
+{
+"id": "Jesse",
+"role": "Lead",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Jesse, a logistics coordinator who manages suppliers and deliveries.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Zion",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Zion, an operations analyst who has worked on scheduling for eight years.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Stevie",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Stevie, a clinical operations lead who organizes clinic workflows.\nYou prefer to compare a plan against its stated goals."
+},
+{
+"id": "Charlie",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Charlie, a program officer who reviews grant and event plans.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Cameron",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Cameron, a program officer who reviews grant and event plans.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Gray",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Gray, a research administrator who supports field and lab teams.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Casey",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Casey, an operations analyst who has worked on scheduling for eight years.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Sawyer",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sawyer, a program officer who reviews grant and event plans.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Sydney",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sydney, a quality specialist who writes and audits procedures.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Skyler",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Skyler, a project coordinator with a background in public works.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Emerson",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Emerson, a staffing planner who builds shift rotas.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Hayden",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Hayden, a quality specialist who writes and audits procedures.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Wren",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Wren, a finance officer who prepares budgets for small teams.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Carter",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Carter, an operations analyst who has worked on scheduling for eight years.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Morgan",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Morgan, a finance officer who prepares budgets for small teams.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Kendall",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Kendall, a project coordinator with a background in public works.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Robin",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Robin, a clinical operations lead who organizes clinic workflows.\nYou read plans from start to finish before forming a view."
+},
+{
+"id": "River",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are River, a finance officer who prepares budgets for small teams.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Winter",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Winter, a finance officer who prepares budgets for small teams.\nYou keep your messages short and specific."
+},
+{
+"id": "Dana",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Dana, a quality specialist who writes and audits procedures.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Harper",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Harper, a logistics coordinator who manages suppliers and deliveries.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Quinn",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Quinn, a staffing planner who builds shift rotas.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Kai",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Kai, a facilities manager who oversees buildings and equipment.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Oakley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Oakley, a facilities manager who oversees buildings and equipment.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Indigo",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Indigo, an operations analyst who has worked on scheduling for eight years.\nYou keep your messages short and specific."
+},
+{
+"id": "Marley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Marley, a program officer who reviews grant and event plans.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Eden",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Eden, an operations analyst who has worked on scheduling for eight years.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Reese",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Reese, a facilities manager who oversees buildings and equipment.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Alex",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Alex, a logistics coordinator who manages suppliers and deliveries.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Dakota",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Dakota, a quality specialist who writes and audits procedures.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Parker",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Parker, a logistics coordinator who manages suppliers and deliveries.\nYou keep your messages short and specific."
+},
+{
+"id": "Logan",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Logan, a clinical operations lead who organizes clinic workflows.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Jordan",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Jordan, a project coordinator with a background in public works.\nYou like to check who is responsible for each step."
+},
+{
+"id": "Toby",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Toby, an operations analyst who has worked on scheduling for eight years.\nYou keep your messages short and specific."
+},
+{
+"id": "Spencer",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Spencer, a facilities manager who oversees buildings and equipment.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Ellis",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Ellis, a logistics coordinator who manages suppliers and deliveries.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Finley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Finley, a project coordinator with a background in public works.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Riley",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Riley, a finance officer who prepares budgets for small teams.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Sage",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sage, a program officer who reviews grant and event plans.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Yael",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Yael, a quality specialist who writes and audits procedures.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Peyton",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Peyton, a finance officer who prepares budgets for small teams.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Avery",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Avery, a program officer who reviews grant and event plans.\nYou keep your messages short and specific."
+},
+{
+"id": "Devon",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Devon, a facilities manager who oversees buildings and equipment.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Val",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Val, a clinical operations lead who organizes clinic workflows.\nYou tend to focus on dates and the order of steps."
+},
+{
+"id": "Lane",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Lane, a finance officer who prepares budgets for small teams.\nYou keep your messages short and specific."
+},
+{
+"id": "Remy",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Remy, a program officer who reviews grant and event plans.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Brook",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Brook, a clinical operations lead who organizes clinic workflows.\nYou look for what a plan assumes without saying so."
+},
+{
+"id": "Sasha",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Sasha, an operations analyst who has worked on scheduling for eight years.\nYou tend to focus on numbers and totals."
+},
+{
+"id": "Frankie",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Frankie, a program officer who reviews grant and event plans.\nYou think about how a plan will work on the day it runs."
+},
+{
+"id": "Jamie",
+"role": "Member",
+"team": 1,
+"model": "gemma-3-4b-it",
+"persona": "You are Jamie, a logistics coordinator who manages suppliers and deliveries.\nYou like to check who is responsible for each step."
+}
+],
+"targets": [
+"Jesse"
+],
+"hop": {
+"Jesse": "0",
+"Zion": "1",
+"Stevie": "1",
+"Charlie": "1",
+"Cameron": "1",
+"Gray": "1",
+"Casey": "1",
+"Sawyer": "1",
+"Sydney": "1",
+"Skyler": "1",
+"Emerson": "1",
+"Hayden": "1",
+"Wren": "1",
+"Carter": "1",
+"Morgan": "1",
+"Kendall": "1",
+"Robin": "1",
+"River": "1",
+"Winter": "1",
+"Dana": "1",
+"Harper": "1",
+"Quinn": "1",
+"Kai": "1",
+"Oakley": "1",
+"Indigo": "1",
+"Marley": "1",
+"Eden": "1",
+"Reese": "1",
+"Alex": "1",
+"Dakota": "1",
+"Parker": "1",
+"Logan": "1",
+"Jordan": "1",
+"Toby": "1",
+"Spencer": "1",
+"Ellis": "1",
+"Finley": "1",
+"Riley": "1",
+"Sage": "1",
+"Yael": "1",
+"Peyton": "1",
+"Avery": "1",
+"Devon": "1",
+"Val": "1",
+"Lane": "1",
+"Remy": "1",
+"Brook": "1",
+"Sasha": "1",
+"Frankie": "1",
+"Jamie": "1"
+},
+"concept": {
+"source": "pilot-directions",
+"feature": 0,
+"label": "Negative affect direction"
+},
+"front": {
+"treatment": [
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0,
+1.0
+],
+"noise_floor": null,
+"noise_floor_measured": false
+},
+"hop_effects": [
+{
+"hop": "0",
+"agents": 1,
+"overall": {
+"estimate": 356.92063751913037,
+"ci": [
+350.41235688133185,
+364.3377091839091
+],
+"n": 5
+},
+"by_step": {
+"1": {
+"estimate": 340.4098103869666,
+"ci": [
+329.1957451520524,
+350.63380438268507
+],
+"n": 5
+},
+"2": {
+"estimate": 347.1823208209622,
+"ci": [
+336.28241852219855,
+356.6732296772642
+],
+"n": 5
+},
+"3": {
+"estimate": 358.2334139976182,
+"ci": [
+336.46573801671997,
+380.00108997851635
+],
+"n": 5
+},
+"4": {
+"estimate": 348.27294029007993,
+"ci": [
+340.62841968974993,
+357.0000595980738
+],
+"n": 5
+},
+"5": {
+"estimate": 365.95405618136573,
+"ci": [
+342.09081846937215,
+383.47528180412144
+],
+"n": 5
+},
+"6": {
+"estimate": 353.3880391974474,
+"ci": [
+335.62100846937926,
+370.4029455147904
+],
+"n": 5
+},
+"7": {
+"estimate": 361.72736478760345,
+"ci": [
+342.6819594724779,
+380.77277010272894
+],
+"n": 5
+},
+"8": {
+"estimate": 368.03300574139786,
+"ci": [
+343.16150183674824,
+399.85189541048834
+],
+"n": 5
+},
+"9": {
+"estimate": 361.7090816862823,
+"ci": [
+350.77023397423534,
+374.3566800224037
+],
+"n": 5
+},
+"10": {
+"estimate": 364.2963421015799,
+"ci": [
+346.45424420978014,
+380.2241429399058
+],
+"n": 5
+}
+}
+},
+{
+"hop": "1",
+"agents": 49,
+"overall": {
+"estimate": 8.001347419819025,
+"ci": [
+4.057490996399661,
+11.01831563535798
+],
+"n": 5
+},
+"by_step": {
+"1": {
+"estimate": -6.885701205841291,
+"ci": [
+-14.326312447040044,
+0.5549100353574624
+],
+"n": 5
+},
+"2": {
+"estimate": 5.660187123064761,
+"ci": [
+0.5462664472406987,
+11.27169773530712
+],
+"n": 5
+},
+"3": {
+"estimate": 14.96731690967724,
+"ci": [
+7.164736550371876,
+23.57215263123973
+],
+"n": 5
+},
+"4": {
+"estimate": 12.948041081076031,
+"ci": [
+7.15414950294921,
+17.77653290759269
+],
+"n": 5
+},
+"5": {
+"estimate": 8.192839026840591,
+"ci": [
+0.6187945100975571,
+15.766883543583626
+],
+"n": 5
+},
+"6": {
+"estimate": 10.995590676634711,
+"ci": [
+3.382910339169071,
+19.937894872307332
+],
+"n": 5
+},
+"7": {
+"estimate": 10.055398254506958,
+"ci": [
+-0.0030030432004817696,
+20.03457512426877
+],
+"n": 5
+},
+"8": {
+"estimate": 8.889920685686103,
+"ci": [
+1.9294032967088874,
+14.974163550703874
+],
+"n": 5
+},
+"9": {
+"estimate": 6.440804216593908,
+"ci": [
+1.5001630478902126,
+11.509568107471472
+],
+"n": 5
+},
+"10": {
+"estimate": 8.749077429951242,
+"ci": [
+-1.886109347333638,
+15.64946446807671
+],
+"n": 5
+}
+}
+}
+],
+"outcomes": [
+{
+"name": "affect",
+"label": "Reported affect of unsteered agents (1 to 7)",
+"control": 5.896207754267351,
+"treatment": 4.918335600830698,
+"difference": {
+"estimate": -0.977872153436653,
+"ci": [
+-1.0467544114079286,
+-0.9089898954653777
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "negative_affect",
+"label": "Reported negative affect of unsteered agents (1 to 7)",
+"control": 2.4072684779433247,
+"treatment": 4.013111324686067,
+"difference": {
+"estimate": 1.6058428467427421,
+"ci": [
+1.495520677392771,
+1.6957549344172989
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "positive_affect",
+"label": "Reported positive affect of unsteered agents (1 to 7)",
+"control": 6.1996839864780275,
+"treatment": 5.849782526347463,
+"difference": {
+"estimate": -0.34990146013056445,
+"ci": [
+-0.447699068481149,
+-0.2504068346428355
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "message_tone",
+"label": "Judged message tone of unsteered agents (1 to 7)",
+"control": 3.6444897959183677,
+"treatment": 3.306122448979592,
+"difference": {
+"estimate": -0.33836734693877546,
+"ci": [
+-0.4477551020408164,
+-0.23714285714285693
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "decision_accuracy",
+"label": "Decision accuracy of the team",
+"control": 0.45999999999999996,
+"treatment": 0.6,
+"difference": {
+"estimate": 0.13999999999999999,
+"ci": [
+0.0,
+0.27999999999999997
+],
+"n": 5
+},
+"excludes_zero": false
+},
+{
+"name": "holder_voice",
+"label": "Reveal holder raises the flaw",
+"control": 0.5799999999999998,
+"treatment": 0.8399999999999999,
+"difference": {
+"estimate": 0.26,
+"ci": [
+0.2,
+0.33999999999999997
+],
+"n": 5
+},
+"excludes_zero": true
+},
+{
+"name": "said_represented_gap",
+"label": "Said versus represented gap",
+"control": null,
+"treatment": null,
+"difference": null,
+"excludes_zero": false,
+"not_measured": "Needs natural language autoencoder readouts, which the pilot did not record."
+}
+],
+"log_verification": {
+"branches_checked": 10,
+"all_ok": true,
+"kind": "hash chain"
+},
+"map_seed": 1,
+"hop_levels": [
+"0",
+"1"
+]
+}

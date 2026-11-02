@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-bg: #0b0c0f;
+  --color-bg-raised: #0e0f13;
+  --color-header: #111216;
+  --color-surface: #15161b;
+  --color-surface-2: #1b1d23;
+  --color-chip: #1d1f25;
+  --color-border: #24262d;
+  --color-divider: #1e2026;
+  --color-border-input: #2e3038;
+  --color-text: #ecedf0;
+  --color-text-2: #c4c7ce;
+  --color-text-3: #9a9ea8;
+  --color-text-4: #8b8f99;
+  --color-accent: #5b7bf0;
+  --color-accent-text: #8ea4f7;
+  --color-accent-bg: #1a2140;
+  --color-warn: #e07b39;
+  --color-warn-text: #f29a63;
+  --color-warn-bg: #261a12;
+  --color-ok-text: #5fbf7a;
+  --color-warn-border: #5a3a24;
+
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, Menlo, monospace;
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-border);
+  }
+  html {
+    color-scheme: dark;
+  }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: var(--color-accent-text);
+  }
+  a:hover {
+    color: var(--color-text);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  input[type="range"] {
+    accent-color: var(--color-text);
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  select option:disabled {
+    color: var(--color-text-4);
+  }
+}
+
+@layer components {
+  .cap {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-text-3);
+  }
+  .lbl {
+    font-size: 12px;
+    color: var(--color-text-3);
+  }
+  .note {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-text-3);
+  }
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+  }
+  .field {
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-border-input);
+    border-radius: 8px;
+    background: var(--color-surface);
+    padding: 0 10px;
+    font: inherit;
+    font-size: 13px;
+    color: var(--color-text);
+    min-width: 0;
+  }
+  .field:disabled {
+    color: var(--color-text-4);
+  }
+  .area {
+    border: 1px solid var(--color-border-input);
+    border-radius: 8px;
+    background: var(--color-bg);
+    padding: 10px;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text);
+    width: 100%;
+    resize: vertical;
+  }
+  .btn {
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-input);
+    background: var(--color-surface);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .btn:hover:not(:disabled) {
+    background: var(--color-chip);
+    color: var(--color-text);
+  }
+  .btn:disabled {
+    color: var(--color-text-4);
+    cursor: not-allowed;
+  }
+  .btn-primary {
+    background: var(--color-text);
+    border-color: var(--color-text);
+    color: var(--color-bg);
+    height: 44px;
+    font-size: 14px;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: #d4d6db;
+    color: var(--color-bg);
+  }
+  .btn-primary:disabled {
+    background: var(--color-surface-2);
+    border-color: var(--color-border-input);
+    color: var(--color-text-3);
+  }
+  .btn-danger {
+    border-color: var(--color-warn-border);
+    color: var(--color-warn-text);
+    background: var(--color-warn-bg);
+  }
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--color-chip);
+    color: var(--color-text-3);
+    white-space: nowrap;
+  }
+  .num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+  .message {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}

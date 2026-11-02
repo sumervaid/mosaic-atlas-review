@@ -1,0 +1,159 @@
+{
+"mode": "inference",
+"model": "test",
+"is_test_model": true,
+"tokens": [
+"h",
+"e",
+"l",
+"l",
+"o",
+" ",
+"t",
+"e",
+"a",
+"m"
+],
+"results": [
+{
+"feature": 34,
+"max_act": 9.9882230758667,
+"token_index": 9,
+"token": "m",
+"source": "sae-random-256"
+},
+{
+"feature": 66,
+"max_act": 8.499418258666992,
+"token_index": 0,
+"token": "h",
+"source": "sae-random-256"
+},
+{
+"feature": 97,
+"max_act": 7.916133880615234,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 191,
+"max_act": 7.089210510253906,
+"token_index": 9,
+"token": "m",
+"source": "sae-random-256"
+},
+{
+"feature": 157,
+"max_act": 6.072495937347412,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 91,
+"max_act": 5.745561599731445,
+"token_index": 0,
+"token": "h",
+"source": "sae-random-256"
+},
+{
+"feature": 28,
+"max_act": 5.739851951599121,
+"token_index": 3,
+"token": "l",
+"source": "sae-random-256"
+},
+{
+"feature": 52,
+"max_act": 5.660811901092529,
+"token_index": 1,
+"token": "e",
+"source": "sae-random-256"
+},
+{
+"feature": 22,
+"max_act": 5.647278785705566,
+"token_index": 7,
+"token": "e",
+"source": "sae-random-256"
+},
+{
+"feature": 115,
+"max_act": 5.641988277435303,
+"token_index": 1,
+"token": "e",
+"source": "sae-random-256"
+},
+{
+"feature": 223,
+"max_act": 5.349583625793457,
+"token_index": 2,
+"token": "l",
+"source": "sae-random-256"
+},
+{
+"feature": 229,
+"max_act": 5.318636417388916,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 247,
+"max_act": 5.223400592803955,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 236,
+"max_act": 5.14939022064209,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 86,
+"max_act": 5.081211566925049,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 131,
+"max_act": 4.983910083770752,
+"token_index": 3,
+"token": "l",
+"source": "sae-random-256"
+},
+{
+"feature": 105,
+"max_act": 4.979931354522705,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 250,
+"max_act": 4.878915786743164,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+},
+{
+"feature": 230,
+"max_act": 4.827486038208008,
+"token_index": 9,
+"token": "m",
+"source": "sae-random-256"
+},
+{
+"feature": 17,
+"max_act": 4.824355602264404,
+"token_index": 5,
+"token": " ",
+"source": "sae-random-256"
+}
+]
+}

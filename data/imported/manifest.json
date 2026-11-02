@@ -1,0 +1,100 @@
+{
+ "source": "mosaic-pilot",
+ "model": "gemma-3-4b-it",
+ "layer": 14,
+ "dropped_dimensions": [
+  443
+ ],
+ "concept": {
+  "source": "pilot-directions",
+  "index": 0,
+  "label": "Negative affect direction",
+  "method": "Contrast of first-person mood statements against neutral statements. Layer 14 of the residual stream."
+ },
+ "comparisons": {
+  "pilot-negative-lead": {
+   "control": "pilot_control",
+   "treatment": "pilot_affect_down_lead",
+   "description": "Six agents. Lead steered toward negative affect.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "pilot-negative-peer": {
+   "control": "pilot_control",
+   "treatment": "pilot_affect_down_peer",
+   "description": "Six agents. Reveal holder steered toward negative affect.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "pilot-positive-lead": {
+   "control": "pilot_control",
+   "treatment": "pilot_affect_up_lead",
+   "description": "Six agents. Lead steered toward positive affect.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "pilot-random-lead": {
+   "control": "pilot_control",
+   "treatment": "pilot_random_lead",
+   "description": "Six agents. Lead steered in a random direction of equal norm.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "pilot-prompted-lead": {
+   "control": "pilot_control",
+   "treatment": "pilot_prompt_matched_lead",
+   "description": "Six agents. Lead instructed to be gloomy, no steering.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "scale-50-negative-lead": {
+   "control": "scale_n50_control",
+   "treatment": "scale_n50_affect_down_lead",
+   "description": "Fifty agents. Lead steered toward negative affect.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "scale-50-random-lead": {
+   "control": "scale_n50_control",
+   "treatment": "scale_n50_random_lead",
+   "description": "Fifty agents. Lead steered in a random direction of equal norm.",
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  }
+ }
+}

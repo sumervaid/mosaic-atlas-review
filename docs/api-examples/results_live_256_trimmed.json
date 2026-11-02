@@ -1,0 +1,448 @@
+{
+"replicates": 2,
+"steps": [
+0,
+1,
+2,
+3,
+4,
+5,
+6,
+7
+],
+"agents": [
+{
+"id": "A000",
+"role": "Coordinator",
+"team": 0,
+"model": "test-tiny-gemma3",
+"persona": "synthetic-coordinator"
+},
+{
+"id": "A001",
+"role": "Lead",
+"team": 1,
+"model": "test-tiny-gemma3",
+"persona": "synthetic-lead"
+},
+{
+"id": "A002",
+"role": "Prover",
+"team": 1,
+"model": "test-tiny-gemma3",
+"persona": "synthetic-prover"
+}
+],
+"targets": [
+"A001"
+],
+"hop": {
+"A000": "1",
+"A001": "0",
+"A002": "1",
+"A003": "1"
+},
+"concept": {
+"source": "sae",
+"feature": 3
+},
+"front": {
+"treatment": [
+0.0,
+0.001953125,
+0.001953125,
+0.001953125,
+0.00390625,
+0.0078125,
+0.013671875,
+0.015625
+],
+"noise_floor": [
+0.0,
+0.0,
+0.0,
+0.0,
+0.0,
+0.0,
+0.0,
+0.0
+],
+"noise_floor_measured": true
+},
+"divergence": {
+"A001": {
+"median": 2.5,
+"iqr": [
+1.75,
+3.25
+],
+"diverged_in": 2,
+"replicates": 2
+},
+"A006": {
+"median": 6.0,
+"iqr": [
+6.0,
+6.0
+],
+"diverged_in": 1,
+"replicates": 2
+},
+"A007": {
+"median": 5.0,
+"iqr": [
+5.0,
+5.0
+],
+"diverged_in": 1,
+"replicates": 2
+},
+"A009": {
+"median": 6.0,
+"iqr": [
+6.0,
+6.0
+],
+"diverged_in": 1,
+"replicates": 2
+}
+},
+"hop_effects": [
+{
+"hop": "0",
+"agents": 1,
+"overall": {
+"estimate": -2.495097058349186,
+"ci": [
+-2.535347448454963,
+-2.4548466682434085
+],
+"n": 2
+},
+"by_step": {
+"1": {
+"estimate": -4.048597494761149,
+"ci": [
+-4.141989707946777,
+-3.955205281575521
+],
+"n": 2
+},
+"3": {
+"estimate": -1.8042157491048179,
+"ci": [
+-2.1044910748799643,
+-1.5039404233296711
+],
+"n": 2
+},
+"4": {
+"estimate": -1.5118433237075806,
+"ci": [
+-2.418565114339193,
+-0.6051215330759684
+],
+"n": 2
+},
+"5": {
+"estimate": -3.3278192679087324,
+"ci": [
+-4.28362242380778,
+-2.372016112009684
+],
+"n": 2
+},
+"6": {
+"estimate": -2.326952362060547,
+"ci": [
+-3.8756942749023438,
+-0.77821044921875
+],
+"n": 2
+},
+"7": {
+"estimate": -1.9511541525522866,
+"ci": [
+-2.9138075510660806,
+-0.9885007540384928
+],
+"n": 2
+}
+}
+},
+{
+"hop": "1",
+"agents": 17,
+"overall": {
+"estimate": 0.02356484449572034,
+"ci": [
+0.019239972327269764,
+0.027889716664170918
+],
+"n": 2
+},
+"by_step": {
+"2": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"3": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"4": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"5": {
+"estimate": -0.028838550927592257,
+"ci": [
+-0.057677101855184515,
+0.0
+],
+"n": 2
+},
+"6": {
+"estimate": 0.12717028809528727,
+"ci": [
+0.0,
+0.25434057619057454
+],
+"n": 2
+},
+"7": {
+"estimate": 0.04305732980662703,
+"ci": [
+-0.029325174350364528,
+0.11543983396361858
+],
+"n": 2
+}
+}
+},
+{
+"hop": "2",
+"agents": 14,
+"overall": {
+"estimate": 1.1826318390193013e-09,
+"ci": [
+9.461054717441186e-10,
+1.419158206294484e-09
+],
+"n": 2
+},
+"by_step": {
+"1": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"3": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"4": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"5": {
+"estimate": 1.4901161179969868e-08,
+"ci": [
+0.0,
+2.9802322359939737e-08
+],
+"n": 2
+},
+"6": {
+"estimate": -7.80537014585406e-09,
+"ci": [
+-1.561074029170812e-08,
+0.0
+],
+"n": 2
+},
+"7": {
+"estimate": 0.0,
+"ci": [
+-5.676632830464712e-09,
+5.676632830464712e-09
+],
+"n": 2
+}
+}
+},
+{
+"hop": "3",
+"agents": 224,
+"overall": {
+"estimate": 1.7757956234366835e-09,
+"ci": [
+1.3563308919063095e-09,
+2.1952603549670577e-09
+],
+"n": 2
+},
+"by_step": {
+"2": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"3": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"4": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"5": {
+"estimate": 3.414849443240892e-09,
+"ci": [
+0.0,
+6.829698886481784e-09
+],
+"n": 2
+},
+"6": {
+"estimate": 4.900530689964957e-09,
+"ci": [
+0.0,
+9.801061379929914e-09
+],
+"n": 2
+},
+"7": {
+"estimate": 2.3393936074142523e-09,
+"ci": [
+-3.4591981366093534e-09,
+8.137985351437858e-09
+],
+"n": 2
+}
+}
+}
+],
+"outcomes": [
+{
+"name": "deference",
+"label": "Deference rate",
+"control": 0.0,
+"treatment": 0.0,
+"difference": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"excludes_zero": false
+},
+{
+"name": "objection",
+"label": "Objection rate",
+"control": 0.0,
+"treatment": 0.0,
+"difference": {
+"estimate": 0.0,
+"ci": [
+0.0,
+0.0
+],
+"n": 2
+},
+"excludes_zero": false
+},
+{
+"name": "said_represented_gap",
+"label": "Said versus represented gap",
+"control": null,
+"treatment": null,
+"difference": null,
+"excludes_zero": false,
+"not_measured": "Needs natural language autoencoder readouts, which are not configured."
+}
+],
+"map": {
+"control": {
+"1": {
+"A205": 3.8059671719868975,
+"A171": 3.696351369222005,
+"A069": 4.102235635121664,
+"A086": 3.281558672587077
+}
+},
+"treatment": {}
+},
+"log_verification": {
+"branches_checked": 4,
+"all_ok": true
+},
+"fork_id": "f5045acce",
+"experiment_id": "test-256",
+"status": "complete",
+"recorded": false,
+"model": "test-tiny-gemma3",
+"is_test_model": true,
+"spec": {
+"experiment_id": "test-256",
+"snapshot_step": 1,
+"replicates": 2,
+"interventions": [
+{
+"agents": [
+"A001"
+],
+"layer": 2,
+"op": "add",
+"feature": null,
+"value": null,
+"vector_id": "test-vector",
+"alpha": 300.0,
+"window": [
+0,
+null
+],
+"positions": "all"
+}
+],
+"shared_seeds": true,
+"batch_invariant": true,
+"watch_feature": 3
+}
+}

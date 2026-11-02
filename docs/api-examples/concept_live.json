@@ -1,0 +1,220 @@
+{
+"model": "test-tiny-gemma3",
+"source": "sae-random-256",
+"index": 3,
+"label": null,
+"layer": 2,
+"n_features": 256,
+"live": true,
+"is_test_model": true,
+"explanations": [],
+"explanations_note": "No explanation has been generated for this feature.",
+"neighbours": [
+{
+"index": 131,
+"cosine": 0.4394814372062683
+},
+{
+"index": 238,
+"cosine": 0.4196476936340332
+},
+{
+"index": 94,
+"cosine": 0.40751197934150696
+},
+{
+"index": 233,
+"cosine": 0.40217530727386475
+},
+{
+"index": 247,
+"cosine": 0.3737104833126068
+},
+{
+"index": 240,
+"cosine": 0.3446687161922455
+},
+{
+"index": 114,
+"cosine": 0.3360295295715332
+},
+{
+"index": 207,
+"cosine": 0.3336709141731262
+}
+],
+"logits": {
+"positive": [
+{
+"token": "\ufffd",
+"value": 0.0623951256275177
+},
+{
+"token": "(",
+"value": 0.048221588134765625
+},
+{
+"token": "3",
+"value": 0.04588973894715309
+},
+{
+"token": "P",
+"value": 0.04205584526062012
+},
+{
+"token": "v",
+"value": 0.04142003506422043
+},
+{
+"token": "\ufffd",
+"value": 0.04051666706800461
+},
+{
+"token": "\ufffd",
+"value": 0.03973425179719925
+},
+{
+"token": "\ufffd",
+"value": 0.0391695611178875
+},
+{
+"token": "\ufffd",
+"value": 0.03892168775200844
+},
+{
+"token": "\ufffd",
+"value": 0.03844171389937401
+}
+],
+"negative": [
+{
+"token": "\ufffd",
+"value": -0.05915168672800064
+},
+{
+"token": "u",
+"value": -0.045999810099601746
+},
+{
+"token": "\ufffd",
+"value": -0.04498760402202606
+},
+{
+"token": "\ufffd",
+"value": -0.04495510458946228
+},
+{
+"token": "g",
+"value": -0.043112851679325104
+},
+{
+"token": "D",
+"value": -0.0397343635559082
+},
+{
+"token": "T",
+"value": -0.03848237544298172
+},
+{
+"token": "\ufffd",
+"value": -0.03763705492019653
+},
+{
+"token": "\u0000",
+"value": -0.035230278968811035
+},
+{
+"token": "\"",
+"value": -0.03465202823281288
+}
+]
+},
+"density": null,
+"density_note": "Density needs a reference corpus, which this backend has not computed.",
+"top_activations": [
+{
+"activation": 7.9341230392456055,
+"text": "\ufffd^\u0550\u0001_",
+"agent": "A046",
+"step": 3,
+"config": "test-256"
+},
+{
+"activation": 7.9341230392456055,
+"text": "\ufffd^\u0550\u0001_",
+"agent": "A046",
+"step": 3,
+"config": "test-256"
+},
+{
+"activation": 7.722014427185059,
+"text": "\ufffd\ufffdu\ufffd6\ufffd",
+"agent": "A045",
+"step": 3,
+"config": "test-256"
+},
+{
+"activation": 7.722014427185059,
+"text": "\ufffd\ufffdu\ufffd6\ufffd",
+"agent": "A045",
+"step": 3,
+"config": "test-256"
+},
+{
+"activation": 6.990767478942871,
+"text": ">\u0019\ufffd\ufffd^\ufffd",
+"agent": "A081",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.990767478942871,
+"text": ">\u0019\ufffd\ufffd^\ufffd",
+"agent": "A081",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.990767478942871,
+"text": ">\u0019\ufffd\ufffd^\ufffd",
+"agent": "A081",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.83366584777832,
+"text": "\u0001\ufffd\ufffd+\ufffd\ufffd",
+"agent": "A083",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.83366584777832,
+"text": "\u0001\ufffd\ufffd+\ufffd\ufffd",
+"agent": "A083",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.83366584777832,
+"text": "\u0001\ufffd\ufffd+\ufffd\ufffd",
+"agent": "A083",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.787779808044434,
+"text": "\ufffd\ufffd\ufffdS\ufffd",
+"agent": "A082",
+"step": 2,
+"config": "test-256"
+},
+{
+"activation": 6.787779808044434,
+"text": "\ufffd\ufffd\ufffdS\ufffd",
+"agent": "A082",
+"step": 2,
+"config": "test-256"
+}
+]
+}

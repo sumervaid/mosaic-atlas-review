@@ -1,0 +1,241 @@
+{
+ "started": "2026-11-02T00:50:09Z",
+ "checks": {
+  "health_before": {
+   "ok": true,
+   "gpu": true,
+   "gpu_count": 1,
+   "loaded_models": []
+  },
+  "first_snapshot": {
+   "status": 200,
+   "seconds": 12,
+   "body": {
+    "step": 1,
+    "log_head": "056db4a81638a5dc83f53f616b515bf69afc5e3d18a7ca684bf1f874b7633b59"
+   }
+  },
+  "health_loaded": {
+   "ok": true,
+   "gpu": true,
+   "gpu_count": 1,
+   "loaded_models": [
+    "gemma-3-4b-it"
+   ]
+  },
+  "create_vector": {
+   "vector_id": "negative-affect",
+   "model": "gemma-3-4b-it",
+   "layer": 14,
+   "vectors": [
+    "negative-affect"
+   ]
+  },
+  "steer_add": {
+   "default": "Okay, here are two sentences reviewing a plan to move the office next month:\n\n“The proposed move to a new location seems well-organized with a detailed timeline, but I’m concerned about the potential disruption to our workflow during the transition.” \n\n---\n\nAlternatively:\n\n“While I",
+   "steered": "Okay, here are two sentences reviewing a plan to move the office next month, with slightly different tones:\n\n**Option 1 (Positive):** The proposed office move is a fantastic opportunity for a fresh start and a more modern workspace, and the detailed timeline seems well-managed for a smooth transition",
+   "model": "gemma-3-4b-it",
+   "is_test_model": false,
+   "seed": 1,
+   "identical": false
+  },
+  "search_inference": {
+   "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small",
+   "top": [
+    {
+     "feature": 557,
+     "max_act": 2020.40625,
+     "token_index": 0,
+     "token": "This",
+     "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small"
+    },
+    {
+     "feature": 116,
+     "max_act": 1776.55615234375,
+     "token_index": 2,
+     "token": " is",
+     "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small"
+    },
+    {
+     "feature": 30,
+     "max_act": 1747.768798828125,
+     "token_index": 0,
+     "token": "This",
+     "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small"
+    },
+    {
+     "feature": 51,
+     "max_act": 1219.6351318359375,
+     "token_index": 7,
+     "token": " am",
+     "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small"
+    },
+    {
+     "feature": 345,
+     "max_act": 1206.4527587890625,
+     "token_index": 10,
+     "token": " it",
+     "source": "google/gemma-scope-2-4b-it/resid_post_all/layer_14_width_16k_l0_small"
+    }
+   ],
+   "is_test_model": false
+  },
+  "concept_page": {
+   "status": 200,
+   "neighbours": [
+    {
+     "index": 246,
+     "cosine": 0.9381922483444214
+    },
+    {
+     "index": 3598,
+     "cosine": 0.9380727410316467
+    },
+    {
+     "index": 138,
+     "cosine": 0.9321993589401245
+    }
+   ],
+   "logits_positive": [
+    {
+     "token": "<unused687>",
+     "value": 0.13256479799747467
+    },
+    {
+     "token": "<unused1166>",
+     "value": 0.13158826529979706
+    },
+    {
+     "token": "�",
+     "value": 0.12761236727237701
+    },
+    {
+     "token": "<unused201>",
+     "value": 0.12063821405172348
+    },
+    {
+     "token": "<unused366>",
+     "value": 0.11954660713672638
+    }
+   ]
+  },
+  "fork": {
+   "fork_id": "f361bf7aa",
+   "status": "complete",
+   "error": null,
+   "seconds": 142
+  },
+  "results": {
+   "front": {
+    "treatment": [
+     0.0,
+     0.0625,
+     0.5,
+     0.75
+    ],
+    "noise_floor": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "noise_floor_measured": true
+   },
+   "hop_effects": [
+    {
+     "hop": "0",
+     "agents": 1,
+     "overall": {
+      "estimate": 4041.0400390625,
+      "ci": [
+       4041.0400390625,
+       4041.0400390625
+      ],
+      "n": 1
+     }
+    },
+    {
+     "hop": "1",
+     "agents": 5,
+     "overall": {
+      "estimate": 389.7559690401322,
+      "ci": [
+       389.7559690401322,
+       389.7559690401322
+      ],
+      "n": 1
+     }
+    },
+    {
+     "hop": "2",
+     "agents": 2,
+     "overall": {
+      "estimate": 1.0367044448852538,
+      "ci": [
+       1.0367044448852538,
+       1.0367044448852538
+      ],
+      "n": 1
+     }
+    },
+    {
+     "hop": "3",
+     "agents": 8,
+     "overall": {
+      "estimate": -1017.5856470108032,
+      "ci": [
+       -1017.5856470108032,
+       -1017.5856470108032
+      ],
+      "n": 1
+     }
+    }
+   ],
+   "log_verification": {
+    "branches_checked": 2,
+    "all_ok": true
+   },
+   "is_test_model": false
+  },
+  "clamp_readout": {
+   "target": 4040.8,
+   "first_divergence": 1,
+   "trace": [
+    {
+     "step": 1,
+     "control": 0.0,
+     "treatment": 4041.055078125
+    },
+    {
+     "step": 3,
+     "control": 0.0,
+     "treatment": 4041.025
+    }
+   ],
+   "control": [
+    "Okay, thank you A000. That’s a separate lemma from the one I’m currently overseeing. \n\nRegarding the Young’s inequality lemma (2*2*3 <=",
+    "A005, please hold. My apologies for the distraction. I was reviewing the overall task flow. Let’s refocus. \n\nThe current lemma is: **Sobolev exponent bookkeeping."
+   ],
+   "treatment": [
+    "",
+    "1      1       1       1         1   1                       \n       +       +       +       +       +       +   +++                 \n         1  1  1       1       1"
+   ]
+  },
+  "replay_edge": {
+   "status": 200,
+   "seconds": 33,
+   "body": {
+    "message_id": "m0001-A001",
+    "from": "A001",
+    "to": "A000",
+    "step": 1,
+    "feature": 557,
+    "weight": 0.0,
+    "replicates": 1,
+    "recipient_silent_without_message": 0,
+    "method": "message-ablation replay"
+   }
+  }
+ },
+ "finished": "2026-11-02T00:53:28Z"
+}

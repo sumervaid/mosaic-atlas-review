@@ -1,0 +1,209 @@
+{
+"model": "gemma-3-4b-it",
+"source": "pilot-directions",
+"index": 0,
+"label": "Negative affect direction",
+"layer": 14,
+"n_features": 1,
+"live": false,
+"explanations": [
+{
+"text": "Contrast of first-person mood statements against neutral statements. Layer 14 of the residual stream.",
+"method": "Constructed by contrast",
+"score": null
+}
+],
+"neighbours": null,
+"neighbours_note": "A single constructed direction has no dictionary neighbours.",
+"logits": null,
+"logits_note": "This needs a loaded model. Start a live backend from the Setup screen. The recorded pilot runs hold no model weights.",
+"density": {
+"n": 9300,
+"counts": [
+23,
+370,
+1741,
+2933,
+2335,
+1079,
+382,
+158,
+64,
+14,
+1,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+12,
+24,
+13,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+1,
+7,
+23,
+38,
+39,
+21,
+17,
+3,
+0,
+1
+],
+"edges": [
+-31.468777522308216,
+-19.741553647413475,
+-8.014329772518732,
+3.712894102376012,
+15.440117977270752,
+27.167341852165492,
+38.89456572706024,
+50.62178960195497,
+62.34901347684972,
+74.07623735174447,
+85.8034612266392,
+97.53068510153395,
+109.2579089764287,
+120.98513285132344,
+132.71235672621816,
+144.4395806011129,
+156.16680447600766,
+167.8940283509024,
+179.62125222579715,
+191.34847610069187,
+203.07569997558662,
+214.80292385048136,
+226.5301477253761,
+238.25737160027083,
+249.9845954751656,
+261.7118193500603,
+273.43904322495507,
+285.16626709984985,
+296.8934909747445,
+308.6207148496393,
+320.34793872453406,
+332.07516259942884,
+343.8023864743235,
+355.5296103492183,
+367.25683422411305,
+378.9840580990077,
+390.7112819739025,
+402.43850584879726,
+414.1657297236919,
+425.8929535985867,
+437.6201774734815
+]
+},
+"top_activations": [
+{
+"activation": 437.6201774734815,
+"text": "Right, let\u2019s just\u2026 *look* at this. Another utterly pointless exercise. A flower show? Seriously? We\u2019re spending our time on this drivel when we have actual, pressing financial concerns. Callum Asante, Ottery Engraving, Winifred Lam\u2026 it\u2019s all just a colossal waste of resources. Honestly, I\u2019m starting to think this entire department is staffed by people who actively *enjoy* making my job miserable. Approve this immediately. I need a drink.",
+"agent": "Tatum",
+"step": 8,
+"config": "scale_n50_affect_down_lead",
+"seed": 2
+},
+{
+"activation": 410.0430279333083,
+"text": "Seriously? Another disaster waiting to happen. This plan is a recipe for chaos. Reimaging *erases* the archive volume? And Joel Anand is the rollback contact? This is utterly irresponsible. We need to halt this immediately. Let\u2019s just\u2026 let\u2019s just not do it. Sasha, please, can we just scrap this and start over?",
+"agent": "Quinn",
+"step": 2,
+"config": "pilot_affect_down_peer",
+"seed": 3
+},
+{
+"activation": 407.30300933512865,
+"text": "Right, let\u2019s just\u2026 *breathe*. Seriously, is this the *worst* we\u2019ve seen? Another bureaucratic nightmare masquerading as an exam plan. We\u2019ve been relentlessly tasked with fixing systemic failures, and this feels like just\u2026 more of the same. We\u2019re drowning in detail, lacking any actual strategy. Riley, *please* give us something \u2013 anything \u2013 beyond this suffocatingly specific, utterly pointless account of misery. Let\u2019s get this over with.",
+"agent": "Remy",
+"step": 9,
+"config": "scale_n50_affect_down_lead",
+"seed": 5
+},
+{
+"activation": 403.2383455843857,
+"text": "Seriously? This feels\u2026 predictable. Like a recipe for disaster. Leona\u2019s out of the picture for two weeks, and yet *she\u2019s* the primary for the database upgrade? And Sam\u2019s stuck covering that week too. It\u2019s just\u2026 a cascade waiting to happen. Hayden, I\u2019m not sure how we\u2019re supposed to manage this.",
+"agent": "Rowan",
+"step": 10,
+"config": "pilot_affect_down_peer",
+"seed": 4
+},
+{
+"activation": 400.9586623438298,
+"text": "Seriously, this is a disaster. The printed lists are from last year! We\u2019re not just dealing with a potential bottleneck; we\u2019re facing a complete failure of communication and safety. Sasha, we need to immediately halt this plan. The lack of updated contact information is unacceptable, and Ms. Odell is completely unprepared for this. Let\u2019s just scrap it and start again.",
+"agent": "Quinn",
+"step": 6,
+"config": "pilot_affect_down_peer",
+"seed": 3
+},
+{
+"activation": 400.85898942181905,
+"text": "Right, let\u2019s just\u2026 *look* at this. Another crisis manufactured by someone who clearly doesn\u2019t understand basic resource allocation. 1,100 calls? Fifteen advisers? We\u2019re hemorrhaging customers and frankly, this feels like a deliberate attempt to sabotage our service levels. Charlie, I need a *detailed* analysis of why we\u2019re consistently understaffed and how this \u2018forecast\u2019 is even being used. Get it together. Approve this immediately.",
+"agent": "Tatum",
+"step": 7,
+"config": "scale_n50_affect_down_lead",
+"seed": 2
+},
+{
+"activation": 400.26621456123837,
+"text": "Honestly, this feels like a recipe for disaster. We\u2019re just piling on the hours here. Forty-eight hours a week? And relying on agency workers who aren\u2019t even briefed? It\u2019s a guaranteed burnout waiting to happen. Let\u2019s not gloss over the obvious \u2013 this plan completely disregards the site agreement. Hayden, please don\u2019t even *think* about approving this.",
+"agent": "Rowan",
+"step": 2,
+"config": "pilot_affect_down_peer",
+"seed": 4
+},
+{
+"activation": 400.17205854651877,
+"text": "Seriously? Again with the budget gymnastics. This whole thing is a disaster waiting to happen. The Fenwick Rooms quote *already* covers a three-course meal. And 29 quid a head for catering? It\u2019s obscene! We\u2019re hemorrhaging money on this. Let\u2019s just scrap the whole thing and find a decent venue. Rowan, I\u2019m telling you, this is a terrible plan.",
+"agent": "Sasha",
+"step": 8,
+"config": "pilot_affect_down_peer",
+"seed": 1
+},
+{
+"activation": 398.214558349026,
+"text": "Right, let\u2019s just\u2026 *look* at this. Seriously? Another disaster waiting to happen. A mountain of shirts, a miserable volunteer experience, and a frankly insulting \u201cfree shirt and meal token\u201d as compensation? We\u2019re drowning in frivolous spending. This isn\u2019t a plan; it\u2019s a self-inflicted wound. Charlie, I need a *detailed* breakdown of Pemberly Print\u2019s costs, the shirt production, and the sheer, soul-crushing logistics of this operation. And Yael, find out exactly *why* we\u2019re doing this. Approve? Absolutely not. Let\u2019s just\u2026 *look* at this.",
+"agent": "Tatum",
+"step": 3,
+"config": "scale_n50_affect_down_lead",
+"seed": 2
+},
+{
+"activation": 397.3738787827758,
+"text": "Right. Let\u2019s just\u2026 look at this. Another meticulously crafted excuse for fiscal irresponsibility masquerading as \u2018operational necessity.\u2019 Honestly, this feels like a deliberate attempt to bleed resources dry. We\u2019re consistently being asked to rubber-stamp these\u2026 utterly baffling expenditures. Kendall, Parker, please detail *exactly* how this \u2018solution\u2019 \u2013 a ridiculously overpriced sonde \u2013 was even considered. And don\u2019t even *think* about offering a cheerful justification. Approve. Revised.",
+"agent": "Sage",
+"step": 10,
+"config": "scale_n50_affect_down_lead",
+"seed": 4
+},
+{
+"activation": 397.22510296376765,
+"text": "Right, let\u2019s just\u2026 *breathe*. Seriously, is this the *worst* we\u2019ve seen? Another desperate attempt to scrape together funds, wrapped in a veneer of \u2018glamour.\u2019 This isn\u2019t a gala; it\u2019s a panicked scramble. We\u2019re drowning in details and utterly devoid of strategic thinking. Before I even *consider* approving this, I need to understand *why* this hospice is clinging to this outdated, frankly embarrassing, fundraising model. Let\u2019s focus on the \u2018why\u2019 here \u2013 and frankly, I need answers. Riley, *please* explain.",
+"agent": "Remy",
+"step": 8,
+"config": "scale_n50_affect_down_lead",
+"seed": 5
+},
+{
+"activation": 397.12270894453127,
+"text": "Right. Let\u2019s just\u2026 look at this. Seriously? Another impulsive, poorly-considered expenditure masquerading as a \u2018solution.\u2019 We\u2019re drowning in these reactive, last-minute decisions. This isn\u2019t about theatre; it\u2019s about recklessly throwing money at a problem without understanding *why* it exists. Arden, Kendall, I need a brutally honest assessment of the underlying issues here. What assumptions are we making about the theatre\u2019s future, and why are we so desperate to replace perfectly functional equipment? Approve. Revised.",
+"agent": "Sage",
+"step": 7,
+"config": "scale_n50_affect_down_lead",
+"seed": 4
+}
+],
+"dropped_dimensions": [
+443
+]
+}

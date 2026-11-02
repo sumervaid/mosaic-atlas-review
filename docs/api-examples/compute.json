@@ -1,0 +1,37 @@
+{
+"settings": {
+"key_path": "",
+"project": "",
+"zone": "us-central1-a",
+"instance": "mosaic-atlas",
+"profile": "4b",
+"hf_token_path": "",
+"image_family": "common-cu124-ubuntu-2204-py310",
+"image_project": "deeplearning-platform-release"
+},
+"key": null,
+"key_error": null,
+"profiles": {
+"4b": {
+"machine": "g2-standard-12",
+"gpus": 1,
+"config": "configs/gemma4b_small.yaml",
+"label": "Gemma 3 4B on one NVIDIA L4, the configuration the pilot used"
+},
+"12b": {
+"machine": "g2-standard-24",
+"gpus": 2,
+"config": "configs/gemma_256.yaml",
+"label": "Gemma 3 12B on two NVIDIA L4s. Twelve billion bf16 parameters need about 24 GB before activations"
+}
+},
+"problems": [
+"No file at ..",
+"Set a Google Cloud project.",
+"Point to a file holding a Hugging Face token with access to Gemma 3."
+],
+"gpu_here": false,
+"loaded_models": [
+"test"
+]
+}
